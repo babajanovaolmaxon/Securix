@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">CyberShield: Kiber-Xavfsizlik Center</h1>
+
+    <div class="container">
+        <!-- 1-Karta: Parol Zaifligini va Buzilish Vaqtini Tekshirish -->
+        <div class="card">
+            <h2>Xakerlik Hujumi Simulyatori</h2>
+            <p>Parolingizni kiriting, biz uning uzunligi va tarkibiga qarab superkompyuterlar uni qancha vaqtda buzishini hisoblaymiz.</p>
+            
+            <input type="text" id="parolTekshir" placeholder="Parolni shu yerga yozing...">
+            
+            <button onclick="simulyatsiyaParol()">Xavfsizlikni Tekshirish</button>
+            <div id="parolNatija" class="result"></div>
+        </div>
+
+        <!-- 2-Karta: IP Manzil va VPN Xavfsizligi -->
+        <div class="card">
+            <h2>IP Manzil Xavfsizlik Skoneri</h2>
+            <p>Sizga shubhali ko'ringan IP manzilni kiriting, biz uning xavfsizlik darajasini va qora ro'yxatda bor-yo'qligini tekshiramiz.</p>
+            
+            <input type="text" id="ipInput" placeholder="Masalan: 192.168.1.1">
+            
+            <button onclick="skanerIP()">IP ni Skanerlash</button>
+            <div id="ipNatija" class="result"></div>
+        </div>
+
+        <!-- 3-Karta: 2FA (Ikki Bosqichli) Vaqtinchalik Kod -->
+        <div class="card">
+            <h2>2FA Vaqtinchalik Kod Generator</h2>
+            <p>Profilingizga kirish uchun xavfsiz, har 10 soniyada o'zgarib turadigan 6 xonali maxfiy kod yaratadi.</p>
+            
+            <input type="text" id="tizimNomi" placeholder="Tizim nomi (masalan: Telegram)">
+            
+            <button onclick="yarat2FA()">Tasdiqlash Kodini Olish</button>
+            <div id="faNatija" class="result"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
